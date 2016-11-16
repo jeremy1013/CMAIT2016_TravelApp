@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  TravelApp
+//
+//  Created by Jeremy on 2016/10/3.
+//  Copyright © 2016年 Jeremy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "DXPopover.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+# define TEXTFIELD_HEIGHT 40;
+
+
+
+#define NSLog(format, ...)     do {            \
+fprintf(stderr, "<%s : %d> %s\n",        \
+[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],      \
+__LINE__, __func__);                      \
+(NSLog)((format), ##__VA_ARGS__);         \
+fprintf(stderr, "------\n");\
+} while(0)
+
+#define NSLogRect(rect)  NSLog(@"%s x:%.4f, y:%.4f, width:%.4f, height:%.4f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
+#define NSLogSize(size) NSLog(@"%s width:%.4f, height:%.4f", #size, size.width, size.height)
+#define NSLogPoint(point) NSLog(@"%s x:%.4f, y:%.4f", #point, point.x, point.y)
+
+
+
+#define LoginImmediately @"LoginImmediately"
+
+
+
+/** 颜色*/
+
+#define    TRAVEL_YELLOW_COLOR     [UIColor colorWithRed:255.0/255.0f green:216.0f/255.0f blue:76.0f/255.0f alpha:1.0f]
+#define TRAVEL_BROWN_COLOR     [UIColor colorWithRed:79.0f/255.0f green:24.0f/255.0f blue:8.0f/255.0f alpha:1.0f]
+
+#define TRAVEL_ORANGE_COLOR    [UIColor colorWithRed:241.0f/255.0f green:154.0f/255.0f blue:101.0f/255.0f alpha:1.0f]
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
