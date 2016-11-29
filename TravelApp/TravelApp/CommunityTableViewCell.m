@@ -7,7 +7,7 @@
 //
 
 #import "CommunityTableViewCell.h"
-#import "GlobalVariable.h"
+
 
 @implementation CommunityTableViewCell
 

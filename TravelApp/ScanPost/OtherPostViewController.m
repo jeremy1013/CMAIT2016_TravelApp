@@ -56,7 +56,7 @@
         otherPostTableViewCell = [[OtherPostTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell];
     }
     
-    return cell;
+    return otherPostTableViewCell;
     
     
 }

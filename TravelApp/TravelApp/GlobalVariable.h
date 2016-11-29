@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
+//extern NSString *const EOCLoginManagerDidLoginNotification;
 
 extern UIColor * travelYellowColor;
 extern UIColor * travelBrownColor;
@@ -22,11 +22,16 @@ static inline UIColor * travelRGBColor(CGFloat red, CGFloat green, CGFloat blue)
     return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 
+
 @interface GlobalVariable : NSObject
+
+extern UIColor * travel;
+
+
 
 + (UIColor*) travelYellowColor;
 + (UIColor*) travelBrownColor;
-+ (UIColor*) travelOrangeColorl;
++ (UIColor*) travelOrangeColor;
 + (CGFloat) mainScreenWith;
 + (CGFloat) mainScreenHeight;
 

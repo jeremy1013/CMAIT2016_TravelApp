@@ -45,6 +45,12 @@
 		3FE9361F1DA91662003ADBDD /* DXPopover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE9361E1DA91662003ADBDD /* DXPopover.framework */; };
 		3FE9362E1DA9243B003ADBDD /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9362D1DA9243B003ADBDD /* ActivityDetailViewController.m */; };
 		3FE936341DA93A2E003ADBDD /* ActivityDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE936331DA93A2E003ADBDD /* ActivityDetailTableViewController.m */; };
+		3FFB308B1DE1EF9800AB2B78 /* JCHTTPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFB30891DE1EF9800AB2B78 /* JCHTTPManager.h */; };
+		3FFB308C1DE1EF9800AB2B78 /* JCHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB308A1DE1EF9800AB2B78 /* JCHTTPManager.m */; };
+		3FFB308F1DE1F1E100AB2B78 /* JCNetworkTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFB308D1DE1F1E100AB2B78 /* JCNetworkTools.h */; };
+		3FFB30901DE1F1E100AB2B78 /* JCNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB308E1DE1F1E100AB2B78 /* JCNetworkTools.m */; };
+		3FFB30931DE341B800AB2B78 /* JCAdmanager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFB30911DE341B800AB2B78 /* JCAdmanager.h */; };
+		3FFB30941DE341B800AB2B78 /* JCAdmanager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB30921DE341B800AB2B78 /* JCAdmanager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +126,12 @@
 		3FE9362D1DA9243B003ADBDD /* ActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityDetailViewController.m; path = Detail/ActivityDetailViewController.m; sourceTree = "<group>"; };
 		3FE936321DA93A2E003ADBDD /* ActivityDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityDetailTableViewController.h; path = Detail/ActivityDetailTableViewController.h; sourceTree = "<group>"; };
 		3FE936331DA93A2E003ADBDD /* ActivityDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityDetailTableViewController.m; path = Detail/ActivityDetailTableViewController.m; sourceTree = "<group>"; };
+		3FFB30891DE1EF9800AB2B78 /* JCHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCHTTPManager.h; path = Tools/JCHTTPManager.h; sourceTree = "<group>"; };
+		3FFB308A1DE1EF9800AB2B78 /* JCHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCHTTPManager.m; path = Tools/JCHTTPManager.m; sourceTree = "<group>"; };
+		3FFB308D1DE1F1E100AB2B78 /* JCNetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCNetworkTools.h; path = Tools/JCNetworkTools.h; sourceTree = "<group>"; };
+		3FFB308E1DE1F1E100AB2B78 /* JCNetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCNetworkTools.m; path = Tools/JCNetworkTools.m; sourceTree = "<group>"; };
+		3FFB30911DE341B800AB2B78 /* JCAdmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCAdmanager.h; path = Tools/JCAdmanager.h; sourceTree = "<group>"; };
+		3FFB30921DE341B800AB2B78 /* JCAdmanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCAdmanager.m; path = Tools/JCAdmanager.m; sourceTree = "<group>"; };
 		70191A69E008E1636C13DD69 /* Pods-TravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		9B0FC38B253E6B2A41BE5854 /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -255,6 +267,12 @@
 			children = (
 				3FA0F6921DD83D6100A298ED /* UIImageView+RoundImageView.h */,
 				3FA0F6931DD83D6100A298ED /* UIImageView+RoundImageView.m */,
+				3FFB30891DE1EF9800AB2B78 /* JCHTTPManager.h */,
+				3FFB308A1DE1EF9800AB2B78 /* JCHTTPManager.m */,
+				3FFB308D1DE1F1E100AB2B78 /* JCNetworkTools.h */,
+				3FFB308E1DE1F1E100AB2B78 /* JCNetworkTools.m */,
+				3FFB30911DE341B800AB2B78 /* JCAdmanager.h */,
+				3FFB30921DE341B800AB2B78 /* JCAdmanager.m */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -333,11 +351,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFB308B1DE1EF9800AB2B78 /* JCHTTPManager.h in Headers */,
 				3FA0F6901DD83B6700A298ED /* OtherPostViewController.h in Headers */,
 				3FA0F6941DD83D6100A298ED /* UIImageView+RoundImageView.h in Headers */,
 				3FA0F68C1DD6389600A298ED /* StickViewController.h in Headers */,
 				3FA0F6771DD5E40100A298ED /* ScanPostViewController.h in Headers */,
 				3FA0F6981DD850A700A298ED /* OtherPostTableViewCell.h in Headers */,
+				3FFB308F1DE1F1E100AB2B78 /* JCNetworkTools.h in Headers */,
+				3FFB30931DE341B800AB2B78 /* JCAdmanager.h in Headers */,
 				3FA0F67B1DD5E69800A298ED /* StickTableViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,11 +530,13 @@
 				3F1D10021DA2258B0026C733 /* LoginOrRegisterViewController.m in Sources */,
 				3F4036421DA4019800777978 /* NSMutableArray+ImageArray.m in Sources */,
 				3FBD426D1DA6733700A45E60 /* SILauchTableViewController.m in Sources */,
+				3FFB308C1DE1EF9800AB2B78 /* JCHTTPManager.m in Sources */,
 				3F5B10631DA5316B007EA43B /* CommunityTableViewCell.m in Sources */,
 				3F1D0FE31DA21CC80026C733 /* ViewController.m in Sources */,
 				3FA0F68D1DD6389600A298ED /* StickViewController.m in Sources */,
 				3F1D10121DA259E30026C733 /* HomePageViewController.m in Sources */,
 				3F1BB04A1DA4E16000F2FA77 /* CustomCellTableViewCell.m in Sources */,
+				3FFB30941DE341B800AB2B78 /* JCAdmanager.m in Sources */,
 				3FACB5F51DA7E0FA007E7B9A /* SearchActivitiesViewController.m in Sources */,
 				3FA0F6781DD5E40100A298ED /* ScanPostViewController.m in Sources */,
 				3FBD42701DA6895A00A45E60 /* ASDateSelectSheet.m in Sources */,
@@ -522,6 +545,7 @@
 				3FBD426A1DA66C5C00A45E60 /* GlobalVariable.m in Sources */,
 				3F1D0FDD1DA21CC70026C733 /* main.m in Sources */,
 				3F43E30A1DC4D83F00D7E608 /* MyTabBarController.m in Sources */,
+				3FFB30901DE1F1E100AB2B78 /* JCNetworkTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "MyTabBarController.h"
-#import "GlobalVariable.h"
+
 
 @interface MyTabBarController ()
 

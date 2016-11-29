@@ -8,7 +8,6 @@
 
 #import "RegisterViewController.h"
 #import "JCTextField.h"
-#import "GlobalVariable.h"
 #import "RegisterSuccessViewController.h"
 #import <AFNetworking/AFNetworking.h>
 
@@ -111,16 +110,16 @@
     
 
     //responseObject 是一个已经解析好的NSDictionary类型的数据。所以如果返回的是JSON数据。不用再调用NSJSONSerialization JSONObjectWithData: options: error:]了
+    
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
     [manager POST:@"http://www.quqiongyou.cn/quqiongyou/zhuce1/sendMsg.php" parameters:dictPara progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@--%@", task.response, responseObject);
         self.verifyTextField.text = responseObject[@"data"];
     }
     failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         NSLog(@"%@---%@", task.response, error);
-        
     }];
     
     

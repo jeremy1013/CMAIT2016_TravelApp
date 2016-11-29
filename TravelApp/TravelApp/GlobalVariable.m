@@ -8,6 +8,11 @@
 
 #import "GlobalVariable.h"
 
+
+//NSString *const EOCLoginManagerDidLoginNotification = @"Notificaiton";
+
+
+
 @implementation GlobalVariable
 
 
@@ -19,7 +24,7 @@
     return travelRGBColor(79.0f, 24.0f, 8.0f);
 }
 
-+ (UIColor*) travelOrangeColorl {
++ (UIColor*) travelOrangeColor {
     return travelRGBColor(241, 154, 101);
 }
 
@@ -30,6 +35,7 @@
 }
 
 + (CGFloat) mainScreenHeight {
+    
     return [UIScreen mainScreen].bounds.size.height;
 }
 

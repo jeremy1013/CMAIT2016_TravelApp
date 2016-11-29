@@ -7,7 +7,7 @@
 //
 
 #import "MyselfTableViewController.h"
-#import "GlobalVariable.h"
+
 
 @interface MyselfTableViewController ()
 

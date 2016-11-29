@@ -20,6 +20,7 @@
 
 
 
+/** NSLog族类*/
 #define NSLog(format, ...)     do {            \
 fprintf(stderr, "<%s : %d> %s\n",        \
 [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],      \
@@ -33,6 +34,8 @@ fprintf(stderr, "------\n");\
 #define NSLogPoint(point) NSLog(@"%s x:%.4f, y:%.4f", #point, point.x, point.y)
 
 
+
+/** Notification*/
 
 #define LoginImmediately @"LoginImmediately"
 

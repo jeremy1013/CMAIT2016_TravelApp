@@ -7,7 +7,6 @@
 //
 
 #import "SILauchTableViewController.h"
-#import <UIKit/UIKit.h>
 #import "ASDateSelectSheet.h"
 
 static CGFloat MainScreenWidth = 0;
